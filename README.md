@@ -15,8 +15,11 @@ gris = cv.cvtColor (img, cv.COLOR_BGR2GRAY)
 
 ```
 
+Luego utilizamos las coordenadas proporcionadas por el método "detectMMultiScale" para dibujar rectagulos en los rostros encontrados.
+
 ```
 faces = faces_cascade.detectMultiScale(gris, 1.3,5 )
+
 for (x, y, w, h) in faces:
     cv.rectangle (img, (x, y), (x + w, y + h), (255,0,0), 2)
     roi_gray = gris [y: y + h, x: x + w]
@@ -32,5 +35,5 @@ cv.destroyAllWindows()
 
 
 
-!["https://github.com/LuisAlejandroSalcedo/Deteccion-de-Rostros-con-Python/Resultado.png"]
+![resultado(https://github.com/LuisAlejandroSalcedo/Deteccion-de-Rostros-con-Python/edit/master/Resultado.png)
 

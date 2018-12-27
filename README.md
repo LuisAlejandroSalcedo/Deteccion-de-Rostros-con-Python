@@ -32,5 +32,5 @@ cv.destroyAllWindows()
 
 
 
-!['Resultado']("Resultado.png")
+![]("https://github.com/LuisAlejandroSalcedo/Deteccion-de-Rostros-con-Python/Resultado.PNG")
 
